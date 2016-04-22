@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>歡迎來到驚奇21點</h1>
+      <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+      <INPUT TYPE="button" NAME="button"  Value="開始遊戲" onClick="testResults(this.form)">
+      </FORM>
+    <script type="text/javascript">
+    function testResults (form) {
+    var TestVar = form.inputbox.value;
+    alert ("You typed: " + TestVar);
+  }
+    var poker = new Array();
+        for (var i = 0; i<4 ;i++){
+            poker[i] = new Array();
+            for (var e = 0 ; e<13; e++){
+                poker[i].push("false");
+              }
+        }
+      document.write(poker);
+      function test(){
+        var a = confirm("are you okay?");
+        document.write(a);
+      }
+      test();
+//生成一副牌
+//跑出莊家與玩家的牌組各一張
+//是否要牌？
+//爆掉，直接輸
+//比較誰大
+
+
+
+    </script>
+
+  </body>
+</html>
